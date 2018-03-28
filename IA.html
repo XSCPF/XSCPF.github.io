@@ -8,7 +8,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<title>SCPF Home</title>
+<title>Unauthorized Access</title>
   <style>
   #loader {
   position: absolute;
@@ -26,14 +26,17 @@
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
+
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
@@ -41,14 +44,17 @@
   animation-name: animatebottom;
   animation-duration: 1s
 }
+
 @-webkit-keyframes animatebottom {
   from { bottom:-100px; opacity:0 } 
   to { bottom:0px; opacity:1 }
 }
+
 @keyframes animatebottom { 
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
+
 #myDiv {
   display: none;
   text-align: center;
@@ -57,6 +63,7 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1; 
@@ -66,75 +73,34 @@
 ::-webkit-scrollbar-thumb {
     background: #888; 
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
-.alert {
-    padding: 20px;
-    background-color: #f44336;
-    color: white;
-}
-
-.closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.closebtn:hover {
-    color: black;
-}
-
-a {
-color: black;
-}
-
-p {
-font-family:Trebuchet MS;
-}
 </style>
 </head>
-<body onload="myFunction()" style="margin:0;">
+<body background="SA6.png" onload="myFunction()" style="margin:0;font-family:Trebuchet MS;color:white;">
 
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
   <audio autoplay loop>
-  <source src="The_Dread.ogg" type="audio/ogg">
+  <source src="096_3.ogg" type="audio/ogg">
   </audio>
-  <div class="alert" style="font-family:Trebuchet MS;">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  <strong>Notice:</strong> This website is under construction.
-</div>
-  <p style="font-size:400%;">Welcome to the Special Containment Procedures Foundation</p>
-  <p style="color:white;font-size:50%;">You cannot resist.</p>
-  <a href="https://www.roblox.com/My/Groups.aspx?gid=2760782"><p style="font-size:200%;">Join the group!</p></a>
-  <a href="https://xscpf.github.io/SD"><p style="font-size:150%;">Security Department</p></a>
-  <a href="https://xscpf.github.io/MTF"><p style="font-size:150%;">Mobile Task Forces</p></a>
-  <a href="https://xscpf.github.io/ScD"><p style="font-size:150%;">Scientific Department</p></a>
-  <a href="https://xscpf.github.io/EC"><p style="font-size:150%;">Ethics Committee</p></a>
-  <a href="https://xscpf.github.io/ET"><p style="font-size:150%;">Engineering and Technical Department</p></a>
-  <a href="https://xscpf.github.io/MD"><p style="font-size:150%;">Medical Department</p></a>
-  <a href="https://xscpf.github.io/DEA"><p style="font-size:150%;">Department of External Affairs</p></a>
-  <a href="https://xscpf.github.io/MaD"><p style="font-size:150%;">Manufacturing Department</p></a>
-  <a href="https://xscpf.github.io/DoR"><p style="font-size:150%;">Department of Regulations</p></a>
-  <a href="https://xscpf.github.io/IA"><p style="font-size:150%;">Intelligence Agency</p></a>
-  <a href="https://xscpf.github.io/ISD"><p style="font-size:150%;">Internal Security Department/p></a>
+  <p style="font-size:200%;">This area is restricted to ██ personnel.</p>
+  <p style="font-size:150%;">Unauthorized personnel will be terminated by ███.</p>
+  <p style="font-size:100%;">You are not authorized to continue. Exit immediately.</p>
   <script>
 var myVar;
+
 function myFunction() {
     myVar = setTimeout(showPage, 3000);
 }
+
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
 </script>
-</body>
-</html>
+  </body>
