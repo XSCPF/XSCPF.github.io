@@ -103,6 +103,44 @@ color: black;
 p {
 font-family:Trebuchet MS;
 }
+.button {
+  border-radius: 4px;
+  background-color: #808080;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;">
@@ -120,18 +158,18 @@ font-family:Trebuchet MS;
 <p><image src="scpfhigh.png" alt="SCPF" height="72" width="72"></p>
   <p style="font-size:400%;">Welcome to the Special Containment Procedures Foundation</p>
   <p style="color:white;font-size:50%;">You cannot resist.</p>
-  <a href="https://www.roblox.com/My/Groups.aspx?gid=2760782"><p style="font-size:200%;">Join the group!</p></a>
-  <a href="https://xscpf.github.io/SD"><p style="font-size:150%;">Security Department</p></a>
-  <a href="https://xscpf.github.io/MTF"><p style="font-size:150%;">Mobile Task Forces</p></a>
-  <a href="https://xscpf.github.io/ScD"><p style="font-size:150%;">Scientific Department</p></a>
-  <a href="https://xscpf.github.io/EC"><p style="font-size:150%;">Ethics Committee</p></a>
-  <a href="https://xscpf.github.io/ET"><p style="font-size:150%;">Engineering and Technical Department</p></a>
-  <a href="https://xscpf.github.io/MD"><p style="font-size:150%;">Medical Department</p></a>
-  <a href="https://xscpf.github.io/DEA"><p style="font-size:150%;">Department of External Affairs</p></a>
-  <a href="https://xscpf.github.io/MaD"><p style="font-size:150%;">Manufacturing Department</p></a>
-  <a href="https://xscpf.github.io/DoR"><p style="font-size:150%;">Department of Regulations</p></a>
-  <a href="https://xscpf.github.io/IA"><p style="font-size:150%;">Intelligence Agency</p></a>
-  <a href="https://xscpf.github.io/ISD"><p style="font-size:150%;">Internal Security Department</p></a>
+  <a href="https://www.roblox.com/My/Groups.aspx?gid=2760782"><p style="font-size:200%;"><button class="button"><span>Join the group!</span></button></p></a>
+  <a href="https://xscpf.github.io/SD"><p style="font-size:150%;"><button class="button"><span> SD </span></button><p></a>
+  <a href="https://xscpf.github.io/MTF"><p style="font-size:150%;"><button class="button"><span> MTF </span></button></p></a>
+  <a href="https://xscpf.github.io/ScD"><p style="font-size:150%;"><button class="button"><span> ScD </span></button></p></a>
+  <a href="https://xscpf.github.io/EC"><p style="font-size:150%;"><button class="button"><span> EC </span></button></p></a>
+  <a href="https://xscpf.github.io/ET"><p style="font-size:150%;"><button class="button"><span> E&T </span></button></p></a>
+  <a href="https://xscpf.github.io/MD"><p style="font-size:150%;"><button class="button"><span> MD </span></button></p></a>
+  <a href="https://xscpf.github.io/DEA"><p style="font-size:150%;"><button class="button"><span> DEA </span></button></p></a>
+  <a href="https://xscpf.github.io/MaD"><p style="font-size:150%;"><button class="button"><span> MaD </span></button></p></a>
+  <a href="https://xscpf.github.io/DoR"><p style="font-size:150%;"><button class="button"><span> DoR </span></button></p></a>
+  <a href="https://xscpf.github.io/IA"><p style="font-size:150%;"><button class="button"><span> IA </span></button></p></a>
+  <a href="https://xscpf.github.io/ISD"><p style="font-size:150%;"><button class="button"><span> ISD </span></button></p></a>
   <script>
 var myVar;
 function myFunction() {
