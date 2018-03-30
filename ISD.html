@@ -104,27 +104,11 @@ a:active {
 }
 </style>
 </head>
-<body background="SA6.png" onload="myFunction()" style="margin:0;font-family:Trebuchet MS;color:red;">
-
-<div id="loader"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
-  <audio autoplay loop>
+<body background="SA6.png" style="margin:0;font-family:Trebuchet MS;color:red;text-align:center;">
+<audio autoplay loop>
   <source src="096_3.ogg" type="audio/ogg">
   </audio>
   <p style="font-size:200%;">This area is restricted to ███ personnel.</p>
   <p style="font-size:150%;">Unauthorized personnel will be terminated by ███.</p>
   <p style="font-size:100%;">You are not authorized to continue. <a href="https://xscpf.github.io">Exit immediately.</a></p>
-  <script>
-var myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
   </body>
